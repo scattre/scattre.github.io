@@ -26,7 +26,7 @@ h3 {
     line-height: 1.3em;
     word-spacing: 0.01em;
     letter-spacing: 0.03em;
-    margin-top: -1.3em;
+    margin-top: -1.2em;
 }
 
 h4 {
@@ -194,8 +194,19 @@ header a {
 }
 
 
+#vllt {
+	grid-template-columns: 50% 8% 42%;
+	grid-template-rows: 1fr; 
+	grid-template-areas:
+    "img . txt" 
+    "img . lnk"
+    "img . .";
+    text-align: right;
+}
+
+
 #miss {
-	grid-template-columns: 40% 8% 52%;
+	grid-template-columns: 45% 5% 50%;
 	grid-template-rows: 1fr; 
 	grid-template-areas:
     ". . img" 
@@ -273,6 +284,11 @@ header a {
 	height: 110px;
 }
 
+.vspace-2 {
+	width: 100%;
+	height: 55px;
+}
+
 grid-spc {
 	grid-area: spc;
 	width: 100%;
@@ -292,6 +308,23 @@ grid-txt {
 
 grid-img { 
   	grid-area: img;
+}
+
+
+/*** ------------ raster ------------ ***/
+
+/**
+header,
+li,
+#home,
+.container,
+grid-txt,
+grid-img,
+grid-lnk,
+grid-spc {
+	border-style: solid;
+  	border-width: 1px;
+  	border-color: #ffffff;
 }
 
 
@@ -405,7 +438,7 @@ grid-img {
 
 /*** ------------ grid container ------------ ***/
 
-	#hidd, #untn, #licht, #dbau {
+	#vllt, #hidd, #untn, #licht, #dbau {
 		grid-template-columns: 100%;
 		grid-template-rows: 1fr;
 		grid-template-areas:
@@ -414,6 +447,18 @@ grid-img {
 		"spc"
 		"img";
 	}
+
+	/**
+	#vllt {
+		grid-template-columns: 80% 20%;
+		grid-template-rows: 1fr;
+		grid-template-areas:
+		"txt txt"
+		"lnk lnk"
+		"spc spc"
+		"img .";
+	}
+	**/
 
 	#miss {
 		grid-template-columns: 1fr 80%;
