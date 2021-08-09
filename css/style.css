@@ -271,6 +271,13 @@ header a {
 	"txt .";
 }
 
+#vid {
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"vid txt";
+}
+
 #contact {
 	grid-template-columns: 67% 33%;
 	grid-template-rows: 1fr;
@@ -310,10 +317,14 @@ grid-img {
   	grid-area: img;
 }
 
+grid-vid { 
+  	grid-area: vid; 
+} 
+
 
 /*** ------------ raster ------------ ***/
 
-/**
+/*
 header,
 li,
 #home,
