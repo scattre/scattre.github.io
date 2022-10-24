@@ -212,7 +212,7 @@ header a {
 
 
 #vllt {
-	grid-template-columns: 50% 8% 42%;
+	grid-template-columns: 50% 10% 40%;
 	grid-template-rows: 1fr; 
 	grid-template-areas:
     "img . txt" 
