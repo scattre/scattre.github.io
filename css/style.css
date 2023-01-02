@@ -210,6 +210,14 @@ header a {
 	margin-right: auto;
 }
 
+#remi {
+	grid-template-columns: 40% 5% 55%;
+	grid-template-rows: 1fr; 
+	grid-template-areas:
+    "txt . img" 
+    "lnk . img"
+    ". . img";
+}
 
 #vllt {
 	grid-template-columns: 50% 10% 40%;
@@ -488,6 +496,17 @@ grid-spc {
 	}
 	**/
 
+	#remi {
+		grid-template-columns: 90% 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas:
+		"txt txt"
+		"lnk lnk"
+		"spc spc"
+		"img .";
+		padding-top: 64px;
+	}
+	
 	#miss {
 		grid-template-columns: 1fr 80%;
 		grid-template-rows: 1fr;
