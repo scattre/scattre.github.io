@@ -474,7 +474,7 @@ grid-spc {
 
 /*** ------------ grid container ------------ ***/
 
-	#vllt, #hidd, #untn, #licht, #dbau, #vid {
+	#remi, #vllt, #hidd, #untn, #licht, #dbau, #vid {
 		grid-template-columns: 100%;
 		grid-template-rows: 1fr;
 		grid-template-areas:
@@ -482,29 +482,6 @@ grid-spc {
 		"lnk"
 		"spc"
 		"img";
-	}
-
-	/**
-	#vllt {
-		grid-template-columns: 80% 20%;
-		grid-template-rows: 1fr;
-		grid-template-areas:
-		"txt txt"
-		"lnk lnk"
-		"spc spc"
-		"img .";
-	}
-	**/
-
-	#remi {
-		grid-template-columns: 90% 1fr;
-		grid-template-rows: 1fr;
-		grid-template-areas:
-		"txt txt"
-		"lnk lnk"
-		"spc spc"
-		"img .";
-		padding-top: 64px;
 	}
 	
 	#miss {
