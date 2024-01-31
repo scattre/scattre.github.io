@@ -210,6 +210,17 @@ header a {
 	margin-right: auto;
 }
 
+#grpl {
+	grid-template-columns: 13% 87%;
+	grid-template-rows: 1fr; 
+	grid-template-areas:
+    ". img"
+    ". spc"
+    ". txt"
+    ". lnk";
+    text-align: right;
+}
+
 #remi {
 	grid-template-columns: 40% 5% 55%;
 	grid-template-rows: 1fr; 
@@ -220,7 +231,7 @@ header a {
 }
 
 #vllt {
-	grid-template-columns: 50% 10% 40%;
+	grid-template-columns: 50% 5% 45%;
 	grid-template-rows: 1fr; 
 	grid-template-areas:
     "img . txt" 
@@ -231,7 +242,7 @@ header a {
 
 
 #miss {
-	grid-template-columns: 45% 5% 50%;
+	grid-template-columns: 45% 10% 45%;
 	grid-template-rows: 1fr; 
 	grid-template-areas:
     ". . img" 
@@ -474,7 +485,7 @@ grid-spc {
 
 /*** ------------ grid container ------------ ***/
 
-	#remi, #vllt, #hidd, #untn, #licht, #dbau, #vid {
+	#grpl, #remi, #vllt, #hidd, #untn, #licht, #dbau, #vid {
 		grid-template-columns: 100%;
 		grid-template-rows: 1fr;
 		grid-template-areas:
@@ -547,9 +558,3 @@ grid-spc {
 
 
 }
-
-
-
-
-
-
