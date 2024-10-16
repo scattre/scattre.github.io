@@ -301,7 +301,7 @@ header a {
 }
 
 #bio {
-	grid-template-columns: 80% 20%;
+	grid-template-columns: 84% 16%;
 	grid-template-rows: 1fr;
 	grid-template-areas: 
 	"txt .";
