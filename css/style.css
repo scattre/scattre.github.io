@@ -210,6 +210,35 @@ header a {
 	margin-right: auto;
 }
 
+#road {
+	grid-template-columns: 60% 4% 36%;
+	grid-template-rows: 1fr; 
+	grid-template-areas:
+    "img . txt" 
+    "img . lnk"
+    "img . .";
+    text-align: right;
+}
+
+#lykk {
+	grid-template-columns: 43% 5% 52%;
+	grid-template-rows: 1fr; 
+	grid-template-areas:
+    "txt . img" 
+    "lnk . img"
+    ". . img";
+}
+
+#acap {
+	grid-template-columns: 48% 16% 36%;
+	grid-template-rows: 1fr; 
+	grid-template-areas:
+    "img . ."
+    "img . txt"
+    "img . lnk";
+    text-align: right;
+}
+
 #grpl {
 	grid-template-columns: 13% 87%;
 	grid-template-rows: 1fr; 
@@ -485,7 +514,7 @@ grid-spc {
 
 /*** ------------ grid container ------------ ***/
 
-	#grpl, #remi, #vllt, #hidd, #untn, #licht, #dbau, #vid {
+	#lykk, #grpl, #remi, #vllt, #hidd, #untn, #licht, #dbau, #vid {
 		grid-template-columns: 100%;
 		grid-template-rows: 1fr;
 		grid-template-areas:
@@ -494,7 +523,7 @@ grid-spc {
 		"spc"
 		"img";
 	}
-	
+
 	#miss {
 		grid-template-columns: 1fr 80%;
 		grid-template-rows: 1fr;
@@ -506,7 +535,7 @@ grid-spc {
 		padding-top: 64px;
 	}
 
-	#bigd {
+	#bigd, #acap, #road {
 		grid-template-columns: 80% 20%;
 		grid-template-rows: 1fr;
 		grid-template-areas:
