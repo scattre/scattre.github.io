@@ -51,6 +51,18 @@ p {
     letter-spacing: 0.03em;
 }
 
+figcaption {
+	font-family: helvetica, sans-serif;
+	font-size: 16px;
+    font-weight: lighter;
+    color: #ffffff;
+    line-height: 1.4em;
+    word-spacing: 0.01em;
+    letter-spacing: 0.03em;
+    margin-top: 0.5rem;
+}
+
+
 table {
 	font-family: helvetica, sans-serif;
 	font-size: 16px;
@@ -85,6 +97,23 @@ a {
     letter-spacing: 0.03em;
 }
 
+.releases {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.releases figcaption {
+	list-style: none;
+	font-family: helvetica, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+    font-weight: lighter;
+    color: #ffffff;
+    line-height: 1.4em;
+    word-spacing: 0.01em;
+    letter-spacing: 0.03em;
+}
 
 
 #quote {
@@ -104,6 +133,12 @@ img {
 video {
 	max-width: 100%;
 	height: auto;
+}
+
+figure {
+	margin-top: 2em;
+	width: 275px;
+	min-width: 275px;
 }
 
 /*** ------------ navigation ------------ ***/
@@ -329,7 +364,7 @@ header a {
     "img img .";
 }
 
-#bio {
+#biography {
 	grid-template-columns: 84% 16%;
 	grid-template-rows: 1fr;
 	grid-template-areas: 
@@ -514,7 +549,7 @@ grid-spc {
 
 /*** ------------ grid container ------------ ***/
 
-	#lykk, #grpl, #remi, #vllt, #hidd, #untn, #licht, #dbau, #vid {
+	#road, #grpl, #remi, #vllt, #hidd, #untn, #licht, #dbau, #vid {
 		grid-template-columns: 100%;
 		grid-template-rows: 1fr;
 		grid-template-areas:
@@ -524,7 +559,7 @@ grid-spc {
 		"img";
 	}
 
-	#miss {
+	#miss, #lykk {
 		grid-template-columns: 1fr 80%;
 		grid-template-rows: 1fr;
 		grid-template-areas:
@@ -535,7 +570,7 @@ grid-spc {
 		padding-top: 64px;
 	}
 
-	#bigd, #acap, #road {
+	#bigd, #acap {
 		grid-template-columns: 80% 20%;
 		grid-template-rows: 1fr;
 		grid-template-areas:
@@ -545,7 +580,7 @@ grid-spc {
 		"img .";
 	}
 
-	#bio {
+	#biography {
 		grid-template-columns: 100%;
 		grid-template-rows: 1fr;
 		grid-template-areas:
